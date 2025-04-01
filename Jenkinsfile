@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Publish the artifacts results') { 
             steps {
-                archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+                archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
             }
         }
         stage('deploy to tomcat')
