@@ -49,7 +49,7 @@ pipeline {
                 script {
                     deploy adapters: [
                         tomcat9(credentialsId: 'tomcatt', path: '', url: 'http://localhost:8080/')
-                    ], contextPath: 'spring-petclinic', war: 'target/*.war'
+                    ], contextPath: 'spring-petclinic SCM', war: 'target/*.war'
                 }
             }
         }
